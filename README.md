@@ -14,8 +14,8 @@ This is a starter template for your lab assignments. Follow the GitHub setup bel
 
 2. **Clone Your Fork**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/World-Cup-Fan-Hub.git
-   cd "World-Cup-Fan-Hub/World Cup Fan Hub - Week 1"
+   git clone https://github.com/YOUR-USERNAME/world-cup-fan-hub-week-1.git
+   cd world-cup-fan-hub-week-1
    ```
 
 3. **Add Upstream Remote**
