@@ -20,7 +20,7 @@ This is a starter template for your lab assignments. Follow the GitHub setup bel
 
 3. **Add Upstream Remote**
    ```bash
-   git remote add upstream https://github.com/ORIGINAL-REPO.git
+   git remote add upstream https://github.com/Web-App-Development-S-2026/world-cup-fan-hub-week-1.git
    ```
 
 4. **Pull Latest Changes**
