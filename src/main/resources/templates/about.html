@@ -1,0 +1,34 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>About World Cup 2026</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 th:text="${pageTitle}">Welcome to the 2026 World Cup Hub!</h1>
+      <img
+        th:src="@{/images/worldcup2026.jpg}"
+        src="/images/worldcup2026.jpg"
+        alt="FIFA World Cup 2026"
+        class="hero-image"
+      />
+
+      <p>
+        The 2026 FIFA World Cup promises to be an exciting global event,
+        bringing together teams and supporters from around the world. The
+        competition will take place across:
+        <span class="highlight" th:text="${hostCountries}">host countries</span
+        >.
+      </p>
+
+      <p>
+        Fans from all over the world will gather in North America to enjoy the
+        excitement of the 2026 FIFA World Cup and support their national teams.
+        The World Cup Fan Hub helps visitors stay informed about the tournament,
+        the host countries, the teams, and everything happening during the
+        event.
+      </p>
+    </div>
+  </body>
+</html>
