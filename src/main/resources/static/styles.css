@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 40px 0; /* adds space so the navy shows around the white box */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0A1A2F; /* Deep navy */
+    color: #0A1A2F;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0A1A2F;
+    margin-bottom: 25px;
+    border-left: 6px solid #CFAE53; /* FIFA gold accent */
+    padding-left: 14px;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
