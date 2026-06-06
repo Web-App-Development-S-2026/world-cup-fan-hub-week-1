@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    background:url(https://www.format.com/wp-content/uploads/AMA_EVERTON_LIVERPOOL_RJB_27.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.child{
+    text-align: center;
+    border-radius: 16px;
+    padding: 20px;
+    width: 69%;
+    color: #FFD700;
+    background-color: #0f2b1dce;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #8b8a8a;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}"> World Cup 2026 Fan Hub</title> <!--thymeleaf usage-->
+    <link rel="stylesheet" th:href="@{/css/styles.css}"> <!--thymeleaf usage-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+        font-weight: bold;
+        color: #FFD700 !important;
+        margin-right: 1.5rem;
+        }
+
+        .navbar {
+        background-color: #0F2B1D;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation  copied and modified to maintain consistency-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid justify-content-start px-4">
+        <a class="navbar-brand" href="/">
+
+            ⚽ World Cup Fan & Event Hub
+        </a>
+        <a class="navbar-brand" href="/about">
+            About
+        </a>
+    </div>
+</nav>
+
+    <div class="cont">
+    <div class="child">
+        <h1>About World Cup 2026</h1>
+        <!--  AI overview about the world cup idk anything about soccer -->
+        <p>The 2026 FIFA World Cup is set to be an unprecedented, historic milestone in sports history, completely redefining the scale of global soccer. Co-hosted by three nations—the United States, Canada, and Mexico—the tournament will stretch across 16 vibrant host cities, making it the most geographically expansive World Cup ever attempted.
+            <br>
+            <br>What truly makes the 2026 tournament unique and special compared to previous years comes down to several groundbreaking shifts:
+            <br>
+            <br>* **The Largest Field in History:** For the first time ever, the tournament is expanding from the traditional 32-team format to a massive **48-nation grid**. This gives more countries than ever before the chance to compete on the world stage, resulting in a record-breaking **104 total matches** filled with intense, high-stakes drama.
+            <br>* **A Historic Co-Hosting Trio:** While the 2002 World Cup was famously split between South Korea and Japan, 2026 marks the very first time three countries have combined forces to host. This creates a massive, continent-spanning festival of culture that bridges diverse North American landscapes.
+            <br>* **A Milestone for Canada and Mexico:** While the U.S. looks to build on its 1994 hosting legacy, Canada is making history by hosting men's World Cup matches for the absolute first time. Meanwhile, Mexico will cement its status as a soccer Mecca by becoming the first nation in history to host or co-host the World Cup three separate times (following its iconic 1970 and 1986 tournaments).
+            <br>* **A Renewed Tournament Structure:** To accommodate the larger fleet of teams without sacrificing the drama of the group stage, FIFA is utilizing a format of **12 groups of 4 teams**. This preserves the traditional four-team dynamic while introducing a frantic knockout qualification phase where the top two teams from each group, alongside the 8 best third-place finishers, advance to a brand-new Round of 32.
+            <br>
+            <br>By blending expanded global inclusion with the unmatched stadium infrastructure of three powerhouse nations, the 2026 World Cup isn't just another tournament—it's a colossal, continent-wide celebration that marks the dawn of a entirely new era for the beautiful game.</p>
+    </div>
+    </div>
+    <!-- Bootstrap JS,  I haven't used Bootstrap much so I don't actually know if I need this but it was on the home page so I figure it does something-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
