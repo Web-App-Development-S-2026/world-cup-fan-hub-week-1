@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About World Cup Hub</title>
+
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 th:text="${pageTitle}">
+        Welcome to the 2026 World Cup Hub!
+    </h1>
+
+    <p th:text="${description}">
+        Description goes here.
+    </p>
+
+    <div class="card">
+        <h2>Host Countries</h2>
+
+        <p>
+            The tournament will be hosted by
+            <strong th:text="${hostCountries}">
+                USA, Canada, and Mexico
+            </strong>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Why This Tournament Is Special</h2>
+
+        <p>
+            This will be the first World Cup hosted by three nations together.
+            Millions of fans will travel across North America to support their teams
+            and experience different cultures.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
