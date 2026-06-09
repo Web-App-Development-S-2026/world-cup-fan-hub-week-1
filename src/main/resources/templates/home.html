@@ -93,7 +93,7 @@
                 <img th:src="${team.flagUrl}" class="card-img-top flag-img" th:alt="${team.name}">
                 <div class="card-body text-center">
                     <h4 th:text="${team.name}" class="card-title fw-bold"></h4>
-                    <p class="card-text mb-2 text-muted" th:text="'Confederation : ' + ${team.name}" >Confederation: CONMEBOL</p>
+                    <p class="card-text mb-2 text-muted" th:text="'Confederation : ' + ${team.confederation}" >Confederation: CONMEBOL</p>
                     <div class="mt-3">
                         <span class="badge rounded-pill px-3 py-2 bg-warning text-dark"  th:text="'Fifa Rank : ' + ${team.rank}" >FIFA Rank: 1</span>
                     </div>
