@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">World Cup Hub - About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #FFD700 !important;
+        }
+
+        .navbar {
+            background-color: #0F2B1D;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0F2B1D 0%, #1a4d33 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section .lead {
+            font-size: 1.3rem;
+            color: #FFD700;
+        }
+
+        .about-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-card .card-header {
+            background: linear-gradient(135deg, #0F2B1D 0%, #1a4d33 100%);
+            color: #FFD700;
+            border: none;
+            padding: 20px;
+        }
+
+        .about-card .card-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .about-card .card-body {
+            padding: 25px;
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.05rem;
+        }
+
+        .host-countries-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .country-item {
+            background: linear-gradient(135deg, #FFD700 0%, #ffd700aa 100%);
+            color: #0F2B1D;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .country-item:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #0F2B1D;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #0F2B1D;
+            color: #FFD700;
+        }
+
+        .emoji {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            ⚽ World Cup Fan & Event Hub
+        </a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1 th:text="${pageTitle}"></h1>
+        <p class="lead">The 2026 FIFA World Cup will be the 23rd FIFA World Cup</p>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-lg-10 mx-auto">
+            <!-- Tournament Description Card -->
+            <div class="about-card">
+                <div class="card-header">
+                    <h3>About the 2026 World Cup</h3>
+                </div>
+                <div class="card-body">
+                    <p th:text="${description}"></p>
+                </div>
+            </div>
+
+            <!-- Host Countries Card -->
+            <div class="about-card">
+                <div class="card-header">
+                    <h3>Host Countries</h3>
+                </div>
+                <div class="card-body">
+                    <div class="host-countries-list">
+                        <span class="country-item">🇺🇸 United States</span>
+                        <span class="country-item">🇨🇦 Canada</span>
+                        <span class="country-item">🇲🇽 Mexico</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tournament Highlights Card -->
+            <div class="about-card">
+                <div class="card-header">
+                    <h3>Highlights</h3>
+                </div>
+                <div class="card-body">
+                    <ul style="line-height: 2;">
+                        <li><strong>48 Teams:</strong> The largest World Cup field ever, expanding from 32 teams</li>
+                        <li><strong>80+ Stadiums:</strong> Matches will be hosted across multiple venues in the three nations</li>
+                        <li><strong>Historic Collaboration:</strong> First tournament co-hosted by three countries</li>
+                        <li><strong>North American Stage:</strong> A continental celebration of international football</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="/">← Back to Teams</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
