@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}">World Cup 2026</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+
+<body>
+
+    <main class="about-container">
+        <section class="hero-section">
+            <h1 th:text="${pageTitle}">2026 World Cup Hub.</h1>
+
+            <p th:text="${description}">
+                The 2026 FIFA World Cup will be hosted by three countries.
+            </p>
+
+            <p th:text="${extraInfo}">
+                This page celebrates the tournament.
+            </p>
+        </section>
+
+        <section class="country-section">
+            <h2>Host Countries</h2>
+
+            <div class="country-cards">
+                <div class="country-card">
+                    <h3>Canada</h3>
+                    <p>Canada will welcome fans with passion, diversity, and beautiful host cities.</p>
+                </div>
+
+                <div class="country-card">
+                    <h3>United States</h3>
+                    <p>The United States will host games in huge and famous stadiums, including MetLife Stadium, where
+                        the 2026 World Cup Final will be played.</p>
+                </div>
+
+                <div class="country-card">
+                    <h3>Mexico</h3>
+                    <p>Mexico has a rich soccer tradition and is known around the world for its passionate fans and
+                        unforgettable World Cup atmosphere.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
