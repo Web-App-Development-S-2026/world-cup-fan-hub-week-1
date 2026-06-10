@@ -1,0 +1,72 @@
+/* 1. Global Setup & Background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, #11998e, #38ef7d);
+    min-height: 100vh;
+}
+
+/* 2. Main Content Card Box */
+.content-box {
+    background-color: white;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-top: 8px solid #ffcc00;
+    position: relative;
+    z-index: 5;
+}
+
+/* 3. Typography Styles */
+h1 {
+    color: #0044cc;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    color: #11998e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-left: 5px solid #0044cc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+/* 4. Static Soccer Balls (No Movement) */
+.soccer-ball {
+    position: fixed;
+    font-size: 4rem;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+/* Scatter all 12 soccer balls across different coordinates of the viewport */
+.ball1  { top: 5%;   left: 5%; }
+.ball2  { top: 5%;   left: 45%; }
+.ball3  { top: 5%;   left: 85%; }
+
+.ball4  { top: 35%;  left: 12%; }
+.ball5  { top: 35%;  left: 50%; }
+.ball6  { top: 35%;  left: 80%; }
+
+.ball7  { top: 65%;  left: 8%; }
+.ball8  { top: 65%;  left: 45%; }
+.ball9  { top: 65%;  left: 88%; }
+
+.ball10 { top: 90%;  left: 15%; }
+.ball11 { top: 90%;  left: 52%; }
+.ball12 { top: 90%;  left: 82%; }
