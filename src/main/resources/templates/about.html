@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About World Cup 2026</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #006400;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1 th:text="${pageTitle}">
+    World Cup 2026
+</h1>
+
+<p th:text="${description}">
+    Description here
+</p>
+
+<h2>Host Countries</h2>
+
+<ul>
+    <li>Canada</li>
+    <li>United States</li>
+    <li>Mexico</li>
+</ul>
+
+<p>
+    The tournament will bring together fans from around the world and showcase
+    football across North America. It is expected to be the largest FIFA World Cup
+    in history.
+</p>
+
+</body>
+</html>
