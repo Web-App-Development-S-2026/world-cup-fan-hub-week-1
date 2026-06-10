@@ -1,0 +1,71 @@
+body {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url("/worldcup-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero {
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.card {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+h2 {
+    font-size: 30px;
+    color: #00c2ff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #111;
+    font-weight: bold;
+}

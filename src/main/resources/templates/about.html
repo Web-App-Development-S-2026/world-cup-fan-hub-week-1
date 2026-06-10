@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>About World Cup Hub</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<main>
+    <h1 th:text="${pageTitle}">World Cup 2026</h1>
+
+    <p th:text="${description}">
+        Description will show here.
+    </p>
+
+    <h2>Host Countries</h2>
+    <ul>
+        <li>Canada</li>
+        <li>United States</li>
+        <li>Mexico</li>
+    </ul>
+
+    <p>
+        The 2026 World Cup will bring many teams and fans together for one of the biggest football events in the world.
+    </p>
+</main>
+
+</body>
+</html>
