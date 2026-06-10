@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${pageTitle}">About</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/about}" class="active">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 th:text="${pageTitle}">About</h1>
+
+      <p>
+        The 2026 FIFA World Cup is the
+        <b th:text="${edition}">23rd</b> edition of the FIFA World Cup, hosted
+        across the United States, Canada, and Mexico. 48 teams will compete
+        across 16 cities, playing a total of 104 matches over the course of the
+        tournament.
+      </p>
+
+      <h2>Host Countries</h2>
+      <ul>
+        <li th:each="country : ${hostCountries}" th:text="${country}">
+          Country
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Daniel Gardiner</p>
+    </footer>
+  </body>
+</html>

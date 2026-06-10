@@ -1,0 +1,31 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.site-header {
+    background-color: #0A2240;
+    padding: 1rem 2rem;
+}
+
+.site-header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 600;
+}
+
+.site-header nav a.active,
+.site-header nav a:hover {
+    color: #D4001A;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0A2240;
+    color: #a0aab4;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+}
