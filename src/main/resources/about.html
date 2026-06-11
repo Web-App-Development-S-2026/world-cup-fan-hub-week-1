@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">About World Cup Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-success mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">⚽ World Cup Fan & Event Hub</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="card shadow p-4">
+        <h1 class="mb-3" th:text="${pageTitle}">
+            Welcome to the 2026 World Cup Hub!
+        </h1>
+
+        <p class="lead" th:text="${mainMessage}">
+            The 2026 FIFA World Cup will be hosted by three countries.
+        </p>
+
+        <h3>Host Countries</h3>
+        <p>
+            The tournament will be hosted by
+            <strong th:text="${hostCountries}">USA, Canada, and Mexico</strong>.
+        </p>
+
+        <h3>Why this tournament matters</h3>
+        <p>
+            The 2026 World Cup is important because it brings together fans from many countries and cultures.
+            It is also exciting for Canadian fans because Canada is one of the host countries.
+            This hub helps visitors learn more about the tournament and the participating teams.
+        </p>
+
+        <a href="/" class="btn btn-success mt-3">Back to Teams</a>
+    </div>
+</div>
+
+</body>
+</html>
