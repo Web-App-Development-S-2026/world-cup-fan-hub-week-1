@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the 2026 World Cup Hub!</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+    <div class="container" style="padding: 20px; font-family: sans-serif;">
+        <h1 th:text="${pageTitle}">World Cup 2026</h1>
+        
+        <p>The 2026 FIFA World Cup will be an unprecedented event, hosted across three North American countries: 
+            the United States, Canada, and Mexico. </p>
+        <p>This iteration will also expand to include 48 competing teams.</p>
+        <p style="margin-top: 20px;">
+            <a th:href="@{/}">Back to Home</a>
+        </p>
+    </div>
+</body>
+</html>
