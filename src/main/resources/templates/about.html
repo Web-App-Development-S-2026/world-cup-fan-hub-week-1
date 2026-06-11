@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${pageTitle}">About</title>
+    <link th:href="@{/style.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">World Cup Hub</a>
+      <div class="nav-links">
+        <a href="/">Teams</a>
+        <a href="/about">About</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1 th:text="${pageTitle}">About the 2026 World Cup</h1>
+
+      <p th:text="${description}"></p>
+
+      <h2>Host Countries</h2>
+      <ul>
+        <li>United States</li>
+        <li>Canada</li>
+        <li>Mexico</li>
+      </ul>
+
+      <h2>Tournament Details</h2>
+      <p>
+        The world cup is the world's biggest sporting event, bringing together
+        nations from across the globe.
+      </p>
+
+      <a href="/" class="back-btn">Back to Teams</a>
+    </div>
+  </body>
+</html>

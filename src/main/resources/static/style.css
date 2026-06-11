@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: darkgreen;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 12px;
+}
+
+nav a:first-child {
+  color: gold;
+  font-weight: bold;
+  margin-left: 0;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: darkgreen;
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: darkgreen;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h2 {
+  color: darkgreen;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  color: black;
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: gold;
+  color: darkgreen;
+}
