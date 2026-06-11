@@ -1,0 +1,192 @@
+:root {
+    --hub-green: #0f2b1d;
+    --hub-green-soft: #e6f1ec;
+    --hub-gold: #f4c430;
+    --hub-red: #b91c1c;
+    --hub-ink: #17211b;
+    --hub-muted: #647067;
+    --hub-border: #d8e2dc;
+    --hub-surface: #ffffff;
+}
+
+body.about-page {
+    background: #f4f6f2;
+    color: var(--hub-ink);
+}
+
+.fanhub-navbar {
+    background: var(--hub-green);
+}
+
+.fanhub-navbar .navbar-brand {
+    color: var(--hub-gold);
+    font-weight: 700;
+}
+
+.fanhub-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 600;
+}
+
+.fanhub-navbar .nav-link:hover,
+.fanhub-navbar .nav-link.active {
+    color: #ffffff;
+}
+
+.about-hero {
+    background: var(--hub-green);
+    border-bottom: 8px solid var(--hub-gold);
+    color: #ffffff;
+    padding: 72px 0 56px;
+}
+
+.about-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1;
+    max-width: 920px;
+}
+
+.section-kicker {
+    color: var(--hub-red);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.about-hero .section-kicker {
+    color: var(--hub-gold);
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 1.5rem 0 0;
+    max-width: 820px;
+}
+
+.host-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.host-strip span {
+    background: #ffffff;
+    border-left: 5px solid var(--hub-gold);
+    border-radius: 8px;
+    color: var(--hub-green);
+    font-weight: 800;
+    min-width: 120px;
+    padding: 12px 18px;
+    text-align: center;
+}
+
+.about-content {
+    padding-bottom: 64px;
+    padding-top: 48px;
+}
+
+.feature-panel {
+    background: var(--hub-surface);
+    border: 1px solid var(--hub-border);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(15, 43, 29, 0.08);
+    padding: 28px;
+}
+
+.feature-panel h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 12px 0 10px;
+}
+
+.feature-panel p {
+    color: var(--hub-muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.stat-number {
+    color: var(--hub-red);
+    display: block;
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.countries-header {
+    align-items: end;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 56px 0 22px;
+}
+
+.countries-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.country-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.country-tile {
+    align-items: center;
+    background: var(--hub-surface);
+    border: 1px solid var(--hub-border);
+    border-radius: 8px;
+    display: flex;
+    gap: 14px;
+    min-height: 88px;
+    padding: 14px;
+}
+
+.country-tile img {
+    border: 1px solid var(--hub-border);
+    border-radius: 6px;
+    flex: 0 0 auto;
+    height: 42px;
+    object-fit: cover;
+    width: 64px;
+}
+
+.country-tile h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+}
+
+.country-tile p {
+    color: var(--hub-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .about-hero {
+        padding: 52px 0 40px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .countries-header {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .countries-header .btn {
+        width: 100%;
+    }
+}

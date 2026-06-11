@@ -1,0 +1,103 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${pageTitle}">About World Cup 2026</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+  </head>
+  <body class="about-page">
+    <nav class="navbar navbar-expand-lg navbar-dark fanhub-navbar">
+      <div class="container">
+        <a class="navbar-brand" th:href="@{/}">World Cup Fan & Event Hub</a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" th:href="@{/}">Teams</a>
+          <a class="nav-link active" th:href="@{/about}">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-hero">
+        <div class="container">
+          <p class="section-kicker">North America 2026</p>
+          <h1 th:text="${pageTitle}">Welcome to the 2026 World Cup Hub!</h1>
+          <p class="hero-description" th:text="${description}">
+            The 2026 FIFA World Cup will be hosted by the USA, Canada, and
+            Mexico.
+          </p>
+          <div class="host-strip" aria-label="Host countries">
+            <span th:each="country : ${hostCountries}" th:text="${country}"
+              >Host Country</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="container about-content">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-4">
+            <div class="feature-panel h-100">
+              <span class="stat-number">48</span>
+              <h2>Expanded Tournament</h2>
+              <p>
+                More teams means more styles of play, more travelling
+                supporters, and more countries represented throughout the
+                tournament.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-panel h-100">
+              <span class="stat-number">3</span>
+              <h2>Host Nations</h2>
+              <p>
+                The USA, Canada, and Mexico will share hosting duties, creating
+                a coast-to-coast celebration of football across North America.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-panel h-100">
+              <span class="stat-number" th:text="${#lists.size(teams)}"
+                >48</span
+              >
+              <h2>Featured Countries</h2>
+              <p>
+                This hub highlights participating countries, their
+                confederations, flag colors, and current ranking details for
+                fans to explore.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="countries-header">
+          <div>
+            <p class="section-kicker">Participating Countries</p>
+            <h2>Countries in the Fan Hub</h2>
+          </div>
+          <a class="btn btn-outline-success" th:href="@{/}">View Team Cards</a>
+        </div>
+
+        <div class="country-grid">
+          <article class="country-tile" th:each="team : ${teams}">
+            <img th:src="${team.flagUrl}" th:alt="${team.name + ' flag'}" />
+            <div>
+              <h3 th:text="${team.name}">Country</h3>
+              <p th:text="${team.confederation + ' | FIFA Rank ' + team.rank}">
+                Confederation | FIFA Rank
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
