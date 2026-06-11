@@ -96,7 +96,7 @@ Implement a new `AboutController` with the following requirements:
 | `th:field` | Bind form input to model field |
 | `th:errors` | Display field validation errors |
 | `th:class` | Conditional CSS classes |
-| `th:style` | Conditional inline styles |
+| `th:style` | Conditional inlin e styles |
 | `th:with` | Define local variables |
 | `th:insert` | Include fragment as child |
 | `th:replace` | Replace element with fragment |
@@ -106,3 +106,4 @@ Implement a new `AboutController` with the following requirements:
 - `${}` : Variable expression
 - `*{}` : Object variable expression
 - `#{}` : Utility object expression
+ 
