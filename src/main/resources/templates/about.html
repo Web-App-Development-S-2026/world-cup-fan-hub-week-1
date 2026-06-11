@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2026 World Cup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #FFD700 !important;
+        }
+
+        .navbar {
+            background-color: #0F2B1D;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                ⚽ World Cup Fan & Event Hub
+            </a>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="container">
+        <div class="content-card">
+
+            <!-- title -->
+            <h1 class="display-5 fw-bold text-dark" th:text="${pageTitle}">
+                Welcome to the 2026 World Cup Hub!
+            </h1>
+
+            <!-- description -->
+            <p class="mt-3 text-muted" th:text="${description}">
+                The 2026 FIFA World Cup will be the 23rd FIFA World Cup, hosted by...
+            </p>
+
+            <!-- meaningful content -->
+            <p>
+                The FIFA World Cup is a quadrennial international soccer tournament that determines the sport's world
+                champion. Organized by the Fédération Internationale de Football Association (FIFA), it is the most
+                widely viewed single sporting event in the world, bringing together billions of fans to watch national
+                teams compete for the prestigious trophy.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
