@@ -1,6 +1,5 @@
 package com.cpan228.World.Cup.Event.Hub.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

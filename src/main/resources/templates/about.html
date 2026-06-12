@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${upperTitle}"></title>
+    <link th:href="@{/styles.css}" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            ⚽ World Cup Fan & Event Hub
+        </a>
+    </div>
+</nav>
+<!-- Main Content -->
+<div class="container">
+    <h1 class="display-5 fw-bold text-dark" th:text="${lowerTitle}"></h1>
+    <p class="lead text-muted">The 2026 FIFA World Cup sets several historic milestones.
+    For the first time, the tournament has expanded from the traditional 32-team format to include 48 national teams.
+    Teams are divided into 12 groups of four with 104 total matches, up from 64 in 2022.
+    This is the first FIFA World Cup jointly hosted by three countries: the United States, Mexico, and Canada.
+    Matches are taking place across 16 world-class host cities.</p><br>
+    <img th:src="@{/fifa2026.jpg}">
+</div>
+</body>
+</html>

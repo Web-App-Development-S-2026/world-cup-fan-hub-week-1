@@ -1,0 +1,12 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.navbar {
+    background-color: #0F2B1D;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #FFD700 !important;
+}

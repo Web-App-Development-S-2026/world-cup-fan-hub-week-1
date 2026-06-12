@@ -13,7 +13,7 @@ public class TeamService {
 
     private List<Team> teams;
 
-    public TeamService(){
+    public TeamService() {
 
         teams = new ArrayList<>();
 
@@ -79,6 +79,5 @@ public class TeamService {
         teams.add(new Team(47L, "Peru", "M", "CONMEBOL", 30, "https://flagcdn.com/w320/pe.png"));
         teams.add(new Team(48L, "Mali", "M", "CAF", 38, "https://flagcdn.com/w320/ml.png"));
     }
-
 
 }
