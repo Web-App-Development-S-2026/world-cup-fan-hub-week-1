@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .top-bar {
+            background-color: #063d22;
+            color: #ffde00;
+            padding: 18px 16%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .about-hero {
+            min-height: 100vh;
+            padding: 50px 16%;
+            background:
+                linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+                url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 35px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .info-card h2 {
+            color: #047857;
+            margin-top: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ffc400;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    ⚽ World Cup Fan & Event Hub
+</div>
+
+<section class="about-hero">
+
+    <h1 th:text="${pageTitle}">Welcome to the 2026 World Cup Hub!</h1>
+
+    <p class="subtitle">
+        Learn more about the tournament, host countries, and what makes the 2026 World Cup special.
+    </p>
+
+    <div class="card-container">
+
+        <div class="info-card">
+            <h2>Host Countries</h2>
+            <p>
+                The 2026 FIFA World Cup is the 23rd FIFA World Cup and the first to be hosted by three countries:
+                <strong th:text="${hostCountries}">USA, Canada, and Mexico</strong>. 
+            </p>
+            <span class="badge">3 Host Nations</span>
+        </div>
+
+        <div class="info-card">
+            <h2>Biggest Tournament</h2>
+            <p>
+                This World Cup will feature more teams and more matches than previous tournaments,
+                this makes it one of the largest events in FIFA history. Fans from around the world will gather across North America to celebrate the sport and of course support their national teams.
+            </p>
+            <span class="badge">48 Teams</span>
+        </div>
+
+        <div class="info-card">
+            <h2>Why It Matters to Canada</h2>
+            <p>
+                Canada will play an important role as one of the host nations. This makes the event especially exciting for Canadian Soccer Fans!
+            </p>
+            <span class="badge">Global Event</span>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
