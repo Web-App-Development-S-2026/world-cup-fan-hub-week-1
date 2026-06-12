@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About World Cup 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 th:text="${pageTitle}">
+        Welcome to the 2026 World Cup Hub!
+    </h1>
+
+    <p th:text="${description}">
+        World Cup Description
+    </p>
+
+    <h2>Host Countries</h2>
+
+    <ul>
+        <li>Canada</li>
+        <li>United States</li>
+        <li>Mexico</li>
+    </ul>
+
+    <h2>Why is it Special?</h2>
+
+    <p>
+        The 2026 FIFA World Cup will be the first tournament hosted by
+        three countries together. It is expected to attract millions
+        of football fans from around the world.
+    </p>
+
+    <p>
+        The event will showcase different cultures, world-class stadiums,
+        and exciting matches featuring the best national teams.
+    </p>
+
+</div>
+
+</body>
+</html>
