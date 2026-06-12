@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About 2026 World Cup</title>
+
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<h1 th:text="${pageTitle}"></h1>
+
+<div class="box">
+    <p th:text="${description}"></p>
+</div>
+
+<p>
+    <strong>Hosted by:</strong>
+    <span th:text="${hostCountries}"></span>
+</p>
+
+</body>
+</html>
