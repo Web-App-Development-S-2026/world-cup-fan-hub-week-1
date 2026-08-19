@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About World Cup 2026</title>
+
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+
+<body>
+
+    <main class="about-container">
+
+        <h1 th:text="${pageTitle}">
+            Hi, nice to see you in the 2026 World Cup Hub!
+        </h1>
+
+        <p>
+            The 2026 FIFA World Cup brings soccer fans together
+            from countries around the world.
+        </p>
+
+        <p>
+            This tournament is special because it is hosted by
+            Canada, the United States, and Mexico. Fans will have
+            the chance to support their teams and celebrate one of
+            the biggest sporting events in the world.
+        </p>
+
+        <section class="host-countries">
+            <h2>Host Countries</h2>
+
+            <div class="country">
+                <h3>🇨🇦 Canada</h3>
+            </div>
+
+            <div class="country">
+                <h3>🇺🇸 United States</h3>
+            </div>
+
+            <div class="country">
+                <h3>🇲🇽 Mexico</h3>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
